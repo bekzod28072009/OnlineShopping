@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace UzumMarket.Domain.Enums
 {
-    public enum AccountStatus
+    public enum OrderStatus
     {
-        Active,
-        Suspended,
-        Deleted
+        Pending,
+        Processing,
+        Shipped,
+        Delivered,
+        Cancelled
     }
 }
