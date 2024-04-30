@@ -1,4 +1,6 @@
 
+using UzumMarketWepAPI.Extension;
+
 namespace UzumMarketWepAPI
 {
     public class Program
@@ -11,6 +13,9 @@ namespace UzumMarketWepAPI
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+
+            builder.Services.AddDBConTextes(builder.Configuration);
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
