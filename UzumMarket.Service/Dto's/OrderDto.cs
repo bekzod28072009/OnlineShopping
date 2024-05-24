@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UzumMarket.Domain.Common;
+using UzumMarket.Domain.Entity;
 using UzumMarket.Domain.Enums;
 
-namespace UzumMarket.Domain.Entity
+namespace UzumMarket.Service.Dto_s
 {
-    public class Order : Auditable
+    public class OrderDto
     {
         public decimal TotalAmount { get; set; }
         public List<Item> Items { get; set; }
