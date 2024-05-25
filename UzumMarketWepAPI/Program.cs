@@ -16,8 +16,11 @@ namespace UzumMarketWepAPI
 
 
             builder.Services.AddDBConTextes(builder.Configuration);
+            builder.Services.AddRepository();
+            builder.Services.AddService();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(typeof(Program));
 
             var app = builder.Build();
 
