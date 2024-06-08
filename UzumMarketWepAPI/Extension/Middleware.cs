@@ -27,6 +27,8 @@ namespace UzumMarketWepAPI.Extension
         public static void AddService(this IServiceCollection services)
         {
             services.AddTransient<IItemService, ItemService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IUsersService, UsersService>();
         }
     }
 }
