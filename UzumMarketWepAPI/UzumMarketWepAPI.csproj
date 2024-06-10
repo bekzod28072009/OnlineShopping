@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\UzumMarket.DataAcces\UzumMarket.DataAcces.csproj" />
     <ProjectReference Include="..\UzumMarket.Service\UzumMarket.Service.csproj" />
   </ItemGroup>
