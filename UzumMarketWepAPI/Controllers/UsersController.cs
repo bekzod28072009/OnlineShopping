@@ -10,6 +10,7 @@ namespace UzumMarketWepAPI.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUsersService service;
+
         public UsersController(IUsersService service)
         {
             this.service = service;
