@@ -29,10 +29,10 @@ namespace UzumMarketWepAPI.Controllers
 
         [HttpGet("{id}")]
         public async ValueTask<IActionResult> GetAll([FromRoute] int id)
-            => Ok(await service.GetAsync(p => p.Id != id));
+            => Ok(await service.GetAsync(p => p.Id == id));
 
         [HttpDelete("{id}")]
         public async ValueTask<IActionResult> DeleteAsync([FromRoute] int id)
-            => Ok(await service.DeleteAsync(p => p.Id != id));
+            => Ok(await service.DeleteAsync(p => p.Id == id));
     }
 }
