@@ -30,7 +30,7 @@ namespace UzumMarketWepAPI.Controllers
 
         [HttpGet("{id}")]
         public async ValueTask<IActionResult> GetAll([FromRoute] int Id)
-            => Ok(await service.GetAsync(p => p.Id != Id));
+            => Ok(await service.GetAsync(p => p.Id == Id));
 
         [HttpDelete]
         public async ValueTask<IActionResult> DeleteAsync([FromRoute] int Id)
