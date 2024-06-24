@@ -22,10 +22,6 @@ namespace UzumMarketWepAPI.Extension
             services.AddTransient<IGenericRepository<Item>, GenericRepository<Item>>();
             services.AddTransient<IGenericRepository<Order>, GenericRepository<Order>>();
             services.AddTransient<IGenericRepository<Users>, GenericRepository<Users>>();
-        }
-
-        public static void AddService(this IServiceCollection services)
-        {
             services.AddTransient<IItemService, ItemService>();
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IUsersService, UsersService>();
